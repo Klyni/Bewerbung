@@ -1,0 +1,82 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.send-button {
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 1em;
+  background: white;
+
+  margin: 15px 0;
+}
+
+.send-button:hover {
+  background: lightgreen;
+  cursor: pointer;
+}
+
+.form-wrapper {
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+label > p {
+  min-width: 100px;
+}
+
+label > textarea {
+  resize: none;
+}
+
+label > input,
+label > textarea {
+  width: 100%;
+  appearance: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1em 0;
+}
+
+.message-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.message-wrapper > .message {
+  margin: 1em;
+  padding: 1em 3em;
+  text-align: initial;
+  background: whitesmoke;
+  border-radius: 25px;
+}
+
+.message-wrapper > .message > h2 {
+  text-align: center;
+}
+
+.message-wrapper > .message > .date {
+  color: lightgray;
+}
